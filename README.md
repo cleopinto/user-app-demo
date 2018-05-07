@@ -18,7 +18,7 @@
 
 ### Demo
 
-Download the zip file, move it to a folder of your choice and unzip. Or clone this repository,
+Download the zip file, move it to a folder of your choice and unzip. Or clone this repository.
 cd into 'user-app-demo' folder and execute
 ```commandline
 ./gradlew clean build && java -jar ./build/libs/user-demo-0.0.1.jar

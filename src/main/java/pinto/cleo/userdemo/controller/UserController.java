@@ -35,7 +35,7 @@ public class UserController {
         return userService.getUser(id);
     }
 
-    @PutMapping(path = "/{id}", produces = "application/json")
+    @PutMapping(path = "/{id}", consumes = "application/json", produces = "application/json")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void updateUser(@PathVariable("id") @NotEmpty Integer id, @Valid @RequestBody UserDTO user){
         userService.updateUser(id, user);
